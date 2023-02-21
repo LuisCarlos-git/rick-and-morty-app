@@ -1,61 +1,79 @@
 // Vitest Snapshot v1
 
-exports[`<Paginate /> > should change next page 1`] = `
+exports[`<Paginate /> > should be first item is active 1`] = `
 <body>
   <div>
     <div
-      class="PJLV"
+      class="c-ftalEm"
     >
       <button
+        aria-label="previous page"
+        class="c-SOQlF"
         disabled=""
       >
-        Previous page
+        <svg
+          fill="currentColor"
+          height="24"
+          viewBox="0 0 256 256"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            fill="none"
+            height="256"
+            width="256"
+          />
+          <polyline
+            fill="none"
+            points="160 208 80 128 160 48"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"
+          />
+        </svg>
       </button>
-      <button
-        aria-label="current page"
-        class="c-fkEELj c-fkEELj-fgLFNL-active-true"
+      <div
+        class="c-cXNSAS"
       >
-        1
-      </button>
+        <button
+          aria-label="current page"
+          class="c-kbtghj c-kbtghj-fgLFNL-active-true"
+        >
+          1
+        </button>
+        <button
+          aria-label="current page"
+          class="c-kbtghj"
+        >
+          2
+        </button>
+      </div>
       <button
-        aria-label="current page"
-        class="c-fkEELj"
+        aria-label="next page"
+        class="c-SOQlF"
       >
-        2
-      </button>
-      <button>
-        Next page
-      </button>
-    </div>
-  </div>
-</body>
-`;
-
-exports[`<Paginate /> > should initial page will be first item 1`] = `
-<body>
-  <div>
-    <div
-      class="PJLV"
-    >
-      <button
-        disabled=""
-      >
-        Previous page
-      </button>
-      <button
-        aria-label="current page"
-        class="c-fkEELj c-fkEELj-fgLFNL-active-true"
-      >
-        1
-      </button>
-      <button
-        aria-label="current page"
-        class="c-fkEELj"
-      >
-        2
-      </button>
-      <button>
-        Next page
+        <svg
+          fill="currentColor"
+          height="24"
+          viewBox="0 0 256 256"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            fill="none"
+            height="256"
+            width="256"
+          />
+          <polyline
+            fill="none"
+            points="96 48 176 128 96 208"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"
+          />
+        </svg>
       </button>
     </div>
   </div>

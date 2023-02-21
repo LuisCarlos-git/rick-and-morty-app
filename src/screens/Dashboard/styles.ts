@@ -2,6 +2,7 @@ import { convertPxToRem, styled } from '@/styles/theme'
 
 export const Wrapper = styled('main', {
   background: '$gray-primary',
+  paddingBottom: 40,
 })
 export const Banner = styled('section', {
   height: convertPxToRem(300),
@@ -21,4 +22,10 @@ export const Content = styled('section', {
   display: 'grid',
   gap: '$16',
   gridTemplateColumns: 'repeat(2, 1fr)',
+})
+
+export const PaginateWrapper = styled('section', {
+  maxWidth: convertPxToRem(1400),
+  margin: '0 auto',
+  paddingTop: '$24',
 })

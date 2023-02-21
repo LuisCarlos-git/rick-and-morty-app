@@ -47,11 +47,12 @@ const Dashboard = () => {
           ))}
       </Styles.Content>
 
-      <Paginate
-        total={pagination.count}
-        limit={20}
-        onChangePage={(newPage) => getAllCharacters(newPage)}
-      />
+      <Styles.PaginateWrapper>
+        <Paginate
+          totalPages={pagination.pages}
+          onChangePage={(newPage) => getAllCharacters(newPage)}
+        />
+      </Styles.PaginateWrapper>
     </Styles.Wrapper>
   )
 }

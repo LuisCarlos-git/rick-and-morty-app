@@ -6,27 +6,26 @@ import { Paginate } from '.'
 describe('<Paginate />', () => {
   it('should render pages', () => {
     const { getAllByLabelText } = render(
-      <Paginate onChangePage={vi.fn()} total={40} limit={20} />,
+      <Paginate onChangePage={vi.fn()} totalPages={2} />,
     )
 
     expect(getAllByLabelText('current page')).toHaveLength(2)
   })
 
-  it('should initial page will be first item', async () => {
-    const { baseElement, getByText } = render(
-      <Paginate onChangePage={vi.fn()} total={40} limit={20} />,
+  it('should be first item is active', async () => {
+    const { baseElement } = render(
+      <Paginate onChangePage={vi.fn()} totalPages={2} />,
     )
 
     await waitFor(() => {
-      expect(getByText('1')).toHaveClass('c-fkEELj c-fkEELj-fgLFNL-active-true')
       expect(baseElement).toMatchSnapshot()
     })
   })
 
-  it('should change to next page after change to previous page', async () => {
+  it('should switch to next page after when click button page', async () => {
     const nextPage = vi.fn()
     const { getByText } = render(
-      <Paginate onChangePage={nextPage} total={40} limit={20} />,
+      <Paginate onChangePage={nextPage} totalPages={2} />,
     )
 
     act(() => {
@@ -50,14 +49,14 @@ describe('<Paginate />', () => {
     })
   })
 
-  it('should switch to next page after switching to previous page when next and previous button is clicked', async () => {
+  it('should switch page when Next and Previuos button has clicked', async () => {
     const nextPage = vi.fn()
-    const { getByText } = render(
-      <Paginate onChangePage={nextPage} total={40} limit={20} />,
+    const { getByLabelText } = render(
+      <Paginate onChangePage={nextPage} totalPages={2} />,
     )
 
     act(() => {
-      const element = getByText('Next page')
+      const element = getByLabelText('next page')
 
       fireEvent.click(element)
     })
@@ -67,7 +66,7 @@ describe('<Paginate />', () => {
     })
 
     act(() => {
-      const element = getByText('Previous page')
+      const element = getByLabelText('previous page')
 
       fireEvent.click(element)
     })
