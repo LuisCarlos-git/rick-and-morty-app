@@ -28,3 +28,34 @@ export const characters = {
     },
   ],
 }
+
+export const charactersAnotherPage = {
+  info: {
+    count: 826,
+    pages: 42,
+    next: 'https://rickandmortyapi.com/api/character/?page=20',
+    prev: 'https://rickandmortyapi.com/api/character/?page=18',
+  },
+  results: [
+    {
+      id: 362,
+      name: 'Morty',
+      status: 'Dead',
+      species: 'Humanoid',
+      type: "Rick's Toxic Side",
+      gender: 'Male',
+      origin: {
+        name: 'Alien Spa',
+        url: 'https://rickandmortyapi.com/api/location/64',
+      },
+      location: {
+        name: 'Earth',
+        url: 'https://rickandmortyapi.com/api/location/20',
+      },
+      image: 'https://rickandmortyapi.com/api/character/avatar/361.jpeg',
+      episode: ['https://rickandmortyapi.com/api/episode/27'],
+      url: 'https://rickandmortyapi.com/api/character/361',
+      created: new Date('2018-01-10T18:20:41.703Z'),
+    },
+  ],
+}

@@ -42,7 +42,7 @@ export const Paginate = ({ totalPages, onChangePage }: PaginateProps) => {
         {Array.from({ length: Math.min(MAX_ITEMS, totalPages) })
           .map((_, index) => index + firstPage)
           .map((page) => {
-            // if (page > totalPages) return null
+            if (page > totalPages) return null
             return (
               <Styles.Page
                 aria-label="current page"
