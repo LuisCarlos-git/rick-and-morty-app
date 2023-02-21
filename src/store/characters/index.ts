@@ -10,11 +10,17 @@ const useCharacters = create<StoreType>((set) => {
   return {
     state: {
       characters: [],
+      pagination: <StoreType['state']['pagination']>{},
     },
     actions: {
       populateCharacters(characters) {
         setState((state) => {
           state.characters = characters
+        })
+      },
+      populatePagination(paginationData) {
+        setState((state) => {
+          state.pagination = paginationData
         })
       },
     },

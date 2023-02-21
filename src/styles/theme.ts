@@ -9,8 +9,8 @@ export const { styled, theme, globalCss } = createStitches({
       'gray-primary': 'rgb(39, 43, 51)',
       white: '#fff',
       dead: 'rgb(214, 61, 46)',
-      alive: ' rgb(85, 204, 68)',
-      hover: ' rgb(255, 152, 0)',
+      alive: 'rgb(85, 204, 68)',
+      hover: 'rgb(255, 152, 0)',
       'light-gray': 'rgb(158, 158, 158)',
     },
 

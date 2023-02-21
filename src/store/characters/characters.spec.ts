@@ -6,6 +6,7 @@ import { customRenderHook } from '@/utils/test/customRenderHook'
 import { State } from '@/types/store/characters'
 
 import { useCharactersActions, useCharactersState } from '.'
+import { characters } from '@/mocks/domians/characters/characters.data'
 
 describe('store[characters]', () => {
   it('should return initial state', () => {
@@ -13,6 +14,7 @@ describe('store[characters]', () => {
 
     expect(result.current).toStrictEqual({
       characters: [],
+      pagination: {},
     })
   })
 
@@ -36,5 +38,28 @@ describe('store[characters]', () => {
     })
 
     expect(resultState.current.characters).toHaveLength(1)
+  })
+
+  it('should populate pagination data', () => {
+    const resultActions = customRenderHook(useCharactersActions)
+    const resultState = customRenderHook(useCharactersState)
+
+    act(() => {
+      resultActions.current.populatePagination(characters.info)
+    })
+
+    expect(resultState.current).toStrictEqual({
+      characters: [
+        {
+          origin: 'earth',
+          id: 1,
+          lastLocation: 'earth',
+          name: 'rick',
+          specie: 'Human',
+          status: 'alive',
+        },
+      ],
+      pagination: characters.info,
+    })
   })
 })

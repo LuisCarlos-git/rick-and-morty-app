@@ -7,16 +7,21 @@ import { useCharactersActions, useCharactersState } from '@/store/characters'
 import { characterServices } from '@/http/services/characters'
 
 import * as Styles from './styles'
+import { Paginate } from '@/components/Paginate'
 
 const Dashboard = () => {
-  const { characters } = useCharactersState()
-  const { populateCharacters } = useCharactersActions()
+  const { characters, pagination } = useCharactersState()
+  const { populateCharacters, populatePagination } = useCharactersActions()
 
-  const getAllCharacters = useCallback(async () => {
-    const response = await characterServices.getAllCharacters()
+  const getAllCharacters = useCallback(
+    async (page = 1) => {
+      const response = await characterServices.getAllCharacters(page)
 
-    populateCharacters(response.characters)
-  }, [populateCharacters])
+      populateCharacters(response.characters)
+      populatePagination(response.pagination)
+    },
+    [populateCharacters, populatePagination],
+  )
 
   useEffect(() => {
     getAllCharacters()
@@ -41,6 +46,12 @@ const Dashboard = () => {
             />
           ))}
       </Styles.Content>
+
+      <Paginate
+        total={pagination.count}
+        limit={20}
+        onChangePage={(newPage) => getAllCharacters(newPage)}
+      />
     </Styles.Wrapper>
   )
 }

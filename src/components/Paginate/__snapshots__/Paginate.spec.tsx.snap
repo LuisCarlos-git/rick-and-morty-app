@@ -1,0 +1,63 @@
+// Vitest Snapshot v1
+
+exports[`<Paginate /> > should change next page 1`] = `
+<body>
+  <div>
+    <div
+      class="PJLV"
+    >
+      <button
+        disabled=""
+      >
+        Previous page
+      </button>
+      <button
+        aria-label="current page"
+        class="c-fkEELj c-fkEELj-fgLFNL-active-true"
+      >
+        1
+      </button>
+      <button
+        aria-label="current page"
+        class="c-fkEELj"
+      >
+        2
+      </button>
+      <button>
+        Next page
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`<Paginate /> > should initial page will be first item 1`] = `
+<body>
+  <div>
+    <div
+      class="PJLV"
+    >
+      <button
+        disabled=""
+      >
+        Previous page
+      </button>
+      <button
+        aria-label="current page"
+        class="c-fkEELj c-fkEELj-fgLFNL-active-true"
+      >
+        1
+      </button>
+      <button
+        aria-label="current page"
+        class="c-fkEELj"
+      >
+        2
+      </button>
+      <button>
+        Next page
+      </button>
+    </div>
+  </div>
+</body>
+`;
