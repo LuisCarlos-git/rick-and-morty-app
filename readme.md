@@ -58,4 +58,6 @@ After the clone project enter the folder and  run the intruction below in the te
 <br>
 <br>
 
-Made by <a id='dev'  href='https://www.linkedin.com/in/luis-carlos-bastos-0a7327195/' style='font-weight: bold; text-decoration: underline;'>Luis Carlos</a> 💜
+<p id='dev'>Made by Luis Carlos 💜</p>
+
+[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luis-carlos-bastos-0a7327195/)
