@@ -1,14 +1,11 @@
 <h1 style='text-align:center; font-size: 60px'>Rick and Morty App<h1>
 
-<div align='center'>
-    <a style='background: #202020; color: #fff; font-weight: bold;display: inline-block; padding: 5px 20px;' href='#about'>About</a>
-    <a style='background: #202020; color: #fff; font-weight: bold;display: inline-block; padding: 5px 20px;'  href='#tools'>Tools</a>
-    <a  style='background: #202020; color: #fff; font-weight: bold;display: inline-block; padding: 5px 20px;' href='#instructions'>Instructions</a>
-    <a style='background: #202020; color: #fff; font-weight: bold;display: inline-block; padding: 5px 20px;'  href='#dev'>Developer</a>
-</div>
-<br>
-<br>
-<br>
+<p align='center'>
+    <a style='background: #202020; color: #fff; display: inline-block; padding: 5px 20px;' href='#about'>About -</a>
+    <a style='background: #202020; color: #fff; display: inline-block; padding: 5px 20px;'  href='#tools'>Tools -</a>
+    <a style='background: #202020; color: #fff; display: inline-block; padding: 5px 20px;' href='#instructions'>Instructions</a>
+    <a style='background: #202020; color: #fff; display: inline-block; padding: 5px 20px;'  href='#dev'>Developer</a>
+</p>
 
 <h2 id='about'>About</h2>
 <p>
@@ -52,7 +49,7 @@
 <br>
 <br>
 <p >
-After the clone project enter the folder and  run the intruction below in the terminal: 
+After the clone project enter the folder and  run the instruction below in the terminal: 
 </p>
 <code>yarn</code>
 <br>
