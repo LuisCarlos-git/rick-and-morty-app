@@ -2,7 +2,7 @@ import { setupServer } from 'msw/node'
 import { describe, expect, it } from 'vitest'
 import { act, fireEvent, render, waitFor } from '@testing-library/react'
 
-import { charactersHandlers } from '@/mocks/domians/characters/characters.handlers'
+import { charactersHandlers } from '@/mocks/domains/characters/characters.handlers'
 
 import Dashboard from '.'
 

@@ -9,7 +9,8 @@ describe('<Paginate />', () => {
       <Paginate onChangePage={vi.fn()} totalPages={2} />,
     )
 
-    expect(getAllByLabelText('current page')).toHaveLength(2)
+    expect(getAllByLabelText('current page')).toHaveLength(1)
+    expect(getAllByLabelText('page')).toHaveLength(1)
   })
 
   it('should be first item is active', async () => {

@@ -6,7 +6,7 @@ import { customRenderHook } from '@/utils/test/customRenderHook'
 import { State } from '@/types/store/characters'
 
 import { useCharactersActions, useCharactersState } from '.'
-import { characters } from '@/mocks/domians/characters/characters.data'
+import { characters } from '@/mocks/domains/characters/characters.data'
 
 describe('store[characters]', () => {
   it('should return initial state', () => {

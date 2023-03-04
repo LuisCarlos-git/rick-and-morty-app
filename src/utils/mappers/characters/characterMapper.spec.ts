@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { characters } from '@/mocks/domians/characters/characters.data'
+import { characters } from '@/mocks/domains/characters/characters.data'
 
 import { allCharactersMapper } from '.'
 

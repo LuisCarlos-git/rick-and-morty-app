@@ -79,3 +79,83 @@ exports[`<Paginate /> > should be first item is active 1`] = `
   </div>
 </body>
 `;
+
+exports[`<Paginate /> > should be first item is active 2`] = `
+<body>
+  <div>
+    <div
+      class="c-ftalEm"
+    >
+      <button
+        aria-label="previous page"
+        class="c-SOQlF"
+        disabled=""
+      >
+        <svg
+          fill="currentColor"
+          height="24"
+          viewBox="0 0 256 256"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            fill="none"
+            height="256"
+            width="256"
+          />
+          <polyline
+            fill="none"
+            points="160 208 80 128 160 48"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"
+          />
+        </svg>
+      </button>
+      <div
+        class="c-cXNSAS"
+      >
+        <button
+          aria-label="current page"
+          class="c-kbtghj c-kbtghj-fgLFNL-active-true"
+        >
+          1
+        </button>
+        <button
+          aria-label="page"
+          class="c-kbtghj"
+        >
+          2
+        </button>
+      </div>
+      <button
+        aria-label="next page"
+        class="c-SOQlF"
+      >
+        <svg
+          fill="currentColor"
+          height="24"
+          viewBox="0 0 256 256"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            fill="none"
+            height="256"
+            width="256"
+          />
+          <polyline
+            fill="none"
+            points="96 48 176 128 96 208"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</body>
+`;

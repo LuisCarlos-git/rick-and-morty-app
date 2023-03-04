@@ -45,7 +45,7 @@ export const Paginate = ({ totalPages, onChangePage }: PaginateProps) => {
             if (page > totalPages) return null
             return (
               <Styles.Page
-                aria-label="current page"
+                aria-label={page === currentPage ? 'current page' : 'page'}
                 onClick={() => handleChangeDirectPage(page)}
                 active={currentPage === page}
                 key={page}
