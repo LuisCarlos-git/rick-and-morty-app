@@ -1,6 +1,7 @@
 import { setupServer } from 'msw/node'
 import { describe, expect, it } from 'vitest'
-import { act, fireEvent, render, waitFor } from '@testing-library/react'
+import { act, render, waitFor } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 
 import { charactersHandlers } from '@/mocks/domains/characters/characters.handlers'
 
@@ -27,7 +28,7 @@ describe('<Dashboard />', () => {
     const nextPageButton = getByLabelText('next page')
 
     act(() => {
-      fireEvent.click(nextPageButton)
+      userEvent.click(nextPageButton)
     })
 
     await waitFor(() => {

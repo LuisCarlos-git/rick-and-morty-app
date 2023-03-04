@@ -1,5 +1,6 @@
 import { describe, expect, it, vi } from 'vitest'
-import { act, fireEvent, render, waitFor } from '@testing-library/react'
+import { act, render, waitFor } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 
 import { Paginate } from '.'
 
@@ -32,7 +33,7 @@ describe('<Paginate />', () => {
     act(() => {
       const element = getByText('2')
 
-      fireEvent.click(element)
+      userEvent.click(element)
     })
 
     await waitFor(() => {
@@ -42,7 +43,7 @@ describe('<Paginate />', () => {
     act(() => {
       const element = getByText('1')
 
-      fireEvent.click(element)
+      userEvent.click(element)
     })
 
     await waitFor(() => {
@@ -59,7 +60,7 @@ describe('<Paginate />', () => {
     act(() => {
       const element = getByLabelText('next page')
 
-      fireEvent.click(element)
+      userEvent.click(element)
     })
 
     await waitFor(() => {
@@ -69,7 +70,7 @@ describe('<Paginate />', () => {
     act(() => {
       const element = getByLabelText('previous page')
 
-      fireEvent.click(element)
+      userEvent.click(element)
     })
 
     await waitFor(() => {
