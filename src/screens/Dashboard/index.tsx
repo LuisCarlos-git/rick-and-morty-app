@@ -19,6 +19,10 @@ const Dashboard = () => {
 
       populateCharacters(response.characters)
       populatePagination(response.pagination)
+      window.scroll({
+        top: 0,
+        behavior: 'smooth',
+      })
     },
     [populateCharacters, populatePagination],
   )
