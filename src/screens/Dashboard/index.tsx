@@ -1,5 +1,6 @@
 import { useCallback, useEffect } from 'react'
 
+import { Paginate } from '@/components/Paginate'
 import { CharacterCard } from '@/components/Character'
 
 import { useCharactersActions, useCharactersState } from '@/store/characters'
@@ -7,7 +8,6 @@ import { useCharactersActions, useCharactersState } from '@/store/characters'
 import { characterServices } from '@/http/services/characters'
 
 import * as Styles from './styles'
-import { Paginate } from '@/components/Paginate'
 
 const Dashboard = () => {
   const { characters, pagination } = useCharactersState()
