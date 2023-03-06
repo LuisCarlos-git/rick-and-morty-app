@@ -6,7 +6,11 @@ export const Wrapper = styled('article', {
   borderRadius: '$md',
   overflow: 'hidden',
   display: 'flex',
-  padding: '',
+
+  '@md': {
+    paddingBottom: '$8',
+    height: 200,
+  },
 })
 
 export const Content = styled('div', {
@@ -25,5 +29,10 @@ export const CharacterImage = styled('div', {
   img: {
     width: '100%',
     height: '100%',
+  },
+
+  '@md': {
+    maxWidth: 200,
+    height: 'fit-content',
   },
 })

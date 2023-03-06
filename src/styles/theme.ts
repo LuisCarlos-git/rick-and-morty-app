@@ -41,4 +41,7 @@ export const { styled, theme, globalCss } = createStitches({
       700: 700,
     },
   },
+  media: {
+    md: '(max-width: 768px)',
+  },
 })
