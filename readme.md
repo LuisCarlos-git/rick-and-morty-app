@@ -1,11 +1,6 @@
 <h1 style='text-align:center; font-size: 60px'>Rick and Morty App<h1>
 
-<p align='center'>
-    <a style='background: #202020; color: #fff; display: inline-block; padding: 5px 20px;' href='#about'>About -</a>
-    <a style='background: #202020; color: #fff; display: inline-block; padding: 5px 20px;'  href='#tools'>Tools -</a>
-    <a style='background: #202020; color: #fff; display: inline-block; padding: 5px 20px;' href='#instructions'>Instructions</a>
-    <a style='background: #202020; color: #fff; display: inline-block; padding: 5px 20px;'  href='#dev'>Developer</a>
-</p>
+![gif](./rickmortyapp.gif)
 
 <h2 id='about'>About</h2>
 <p>
