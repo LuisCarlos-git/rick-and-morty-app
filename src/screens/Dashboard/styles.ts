@@ -45,4 +45,10 @@ export const PaginateWrapper = styled('section', {
   maxWidth: convertPxToRem(1400),
   margin: '0 auto',
   paddingTop: '$24',
+  display: 'flex',
+  justifyContent: 'flex-end',
+
+  '@md': {
+    justifyContent: 'center',
+  },
 })

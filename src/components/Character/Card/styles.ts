@@ -8,8 +8,9 @@ export const Wrapper = styled('article', {
   display: 'flex',
 
   '@md': {
+    flexDirection: 'column',
     paddingBottom: '$8',
-    height: 200,
+    height: 'fit-content',
   },
 })
 
@@ -31,8 +32,8 @@ export const CharacterImage = styled('div', {
     height: '100%',
   },
 
-  '@md': {
-    maxWidth: 200,
-    height: 'fit-content',
-  },
+  // '@md': {
+  //   maxWidth: 150,
+  //   height: 200,
+  // },
 })

@@ -1,9 +1,7 @@
-import { styled } from '@/styles/theme'
+import { convertPxToRem, styled } from '@/styles/theme'
 
 export const Wrapper = styled('div', {
   display: 'flex',
-  width: '100%',
-  justifyContent: 'flex-end',
 })
 export const Button = styled('button', {
   appearance: 'none',
@@ -13,6 +11,10 @@ export const Button = styled('button', {
   width: 60,
   borderRadius: '$sm',
   cursor: 'pointer',
+
+  '@md': {
+    width: convertPxToRem(40),
+  },
 
   '&:disabled': {
     cursor: 'not-allowed',
@@ -32,6 +34,10 @@ export const Page = styled('button', {
 
   '& + &': {
     marginLeft: '$8',
+
+    '@md': {
+      marginLeft: '$4',
+    },
   },
 
   variants: {
